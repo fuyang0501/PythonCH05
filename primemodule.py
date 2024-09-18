@@ -1,4 +1,4 @@
-def isprime(n):
+def is_prime(n):
     # check whether n is prime
     if n <= 1:
         return False
@@ -11,8 +11,8 @@ def isprime(n):
 def print_primes(n):
     # prints all prime numbers less than n    
     for i in range(2, n):
-        if isprime(i):
-            print(i)
+        if is_prime(i):
+            print(i, end=', ')
 
 
 
@@ -20,6 +20,6 @@ def get_primes(n):
     # returns a list of prime numbers less than n
     primes = []
     for i in range(2, n):
-        if isprime(i):
+        if is_prime(i):
             primes.append(i)
     return primes
